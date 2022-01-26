@@ -91,7 +91,7 @@ python -m torch.distributed.launch --nproc_per_node=4 ./tools/train.py --config=
 
 For distributed testing with 4 gpus,
 ```bash
-python -m torch.distributed.launch --nproc_per_node=4 ./tools/dist_test.py CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth
+python -m torch.distributed.launch --nproc_per_node=4 ./tools/dist_test.py --config=CONFIG_PATH --work_dir work_dirs/CONFIG_NAME --checkpoint work_dirs/CONFIG_NAME/latest.pth
 ```
 
 ## Acknowlegement
